@@ -679,6 +679,9 @@ class Gen:
  g = gen(100000)
 
 
+ g = gen(10000)
+
+
 
 
 #context manager
