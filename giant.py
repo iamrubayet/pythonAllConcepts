@@ -672,6 +672,13 @@ class Gen:
     return rv
 
 
+ def gen(n):
+ 	for i in range(n):
+ 		yield i**2
+
+ g = gen(100000)
+
+
 
 
 #context manager
