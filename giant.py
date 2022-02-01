@@ -682,9 +682,16 @@ class Gen:
  g = gen(10000)
 
 
+ print(next(g))
+
+
 
 
 #context manager
+
+
+with open("file.txt","r") as file:
+	file.write("hello")
 
 
 
