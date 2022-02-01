@@ -624,12 +624,52 @@ class Dog(metaclass=Meta):
 
 
 
+def func(string):
+	def wrapper(*args,**kwargs):
+		print("started")
+		f(x)
+		print(string)
+		print("ended")
+	return wrapper
+
+@func
+def func2():
+	print("i am func2")
+
+@func
+def func3():
+	print("i am func3")
+
+
 
 
 
 
 
 #generators
+
+
+x = [i**2 for i in range(10000)]
+
+
+for el in x:
+	print(el)
+
+
+
+class Gen:
+	def __init__(self,n):
+		self.n = n
+		self.last = 0
+	def __next__(self):
+		return self.next()
+	def next(self):
+		if self.last = self.n
+		    raise StopIteration()
+
+    rv = self.last ** 2
+    self.last +=1
+    return rv
 
 
 
